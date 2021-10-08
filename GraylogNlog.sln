@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graylog.SampleApi", "Graylog.SampleApi\Graylog.SampleApi.csproj", "{D60DE77A-FE06-4BFB-AFE4-CB867B08589C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{25EC3895-1015-48E8-9FAD-32CEB7FFA04F}"
+ProjectSection(SolutionItems) = preProject
+	docker-compose.yml = docker-compose.yml
+	README.md = README.md
+	.gitignore = .gitignore
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D60DE77A-FE06-4BFB-AFE4-CB867B08589C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D60DE77A-FE06-4BFB-AFE4-CB867B08589C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D60DE77A-FE06-4BFB-AFE4-CB867B08589C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D60DE77A-FE06-4BFB-AFE4-CB867B08589C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EF31BA6-6138-4251-869C-06EB728EE582}
+	EndGlobalSection
+EndGlobal

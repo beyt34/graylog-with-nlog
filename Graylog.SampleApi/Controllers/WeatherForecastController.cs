@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-using NLog.Fluent;
 
 namespace Graylog.SampleApi.Controllers
 {
@@ -23,27 +22,29 @@ namespace Graylog.SampleApi.Controllers
         {
             _logger = logger;
 
+            Thread.Sleep(100);
             _logger.LogTrace("ctor LogTrace...");
-            Thread.Sleep(100);
 
+            Thread.Sleep(100);
             _logger.LogDebug("ctor LogDebug...");
-            Thread.Sleep(100);
 
+            Thread.Sleep(100);
             _logger.LogInformation("ctor LogInformation...");
-            Thread.Sleep(100);
 
+            Thread.Sleep(100);
             _logger.LogWarning("ctor LogWarning...");
-            Thread.Sleep(100);
 
+            Thread.Sleep(100);
             _logger.LogError("ctor LogError...");
-            Thread.Sleep(100);
 
+            Thread.Sleep(100);
             _logger.LogCritical("ctor LogCritical...");
         }
 
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
+            Thread.Sleep(100);
             _logger.LogInformation("Get Start");
 
             var rng = new Random();
@@ -55,6 +56,7 @@ namespace Graylog.SampleApi.Controllers
                 })
                 .ToArray();
 
+            Thread.Sleep(100);
             _logger.LogInformation("Get End");
 
             return array;
